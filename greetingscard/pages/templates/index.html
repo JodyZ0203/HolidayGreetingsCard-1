@@ -11,11 +11,15 @@
     <title>Holiday Greetings Card Generator {% block title %}{% endblock %}</title>
   </head>
   
+   {% include 'card/results.html' %}
+   <body>
+    
+    
+    {% include 'card/results.html' %}
 
-
-  <body>
-     <h1 class="display-1 display-center">Holiday Greetings Card Generator</h1>
-     <label for="exampleDataList" class="form-label">Holiday Choices</label>
+     
+    <h1 class="display-1 display-center">Holiday Greetings Card Generator</h1>
+    <label for="exampleDataList" class="form-label">Holiday Choices</label>
     <input class="form-control" list="datalistOptions" id="exampleDataList" placeholder="Type to search...">
     <datalist id="datalistOptions">
     <option value="Christmas Day">
@@ -45,6 +49,7 @@
   <div class="col-12">
     <button type="button" class="btn btn-primary">Generate Now</button>
   </div>
+
 </form>
 
 
