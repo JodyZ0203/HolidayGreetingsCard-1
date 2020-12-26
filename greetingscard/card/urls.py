@@ -4,7 +4,7 @@ from pages import views
 
 app_name = 'card'
 urlpatterns = [
-    path('', CardInfoView.as_view()),
-    path('<int:id>/results/', views.results, name='results'),
+    path('', CardInfoView.as_view(), name='card'),
+    path('card/<int:pk>/'), views.results, name='results'),
     #path('planner', main)
 ]

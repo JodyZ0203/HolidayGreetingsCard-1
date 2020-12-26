@@ -22,3 +22,7 @@ class CardInfo(models.Model):
     Short_Message = models.TextField(max_length=200)
     Your_Name = models.CharField(max_length=40)
     created_at = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.id
+    
